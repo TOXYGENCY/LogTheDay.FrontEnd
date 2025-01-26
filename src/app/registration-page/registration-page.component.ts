@@ -8,15 +8,14 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-registration-page',
-  standalone: true,
-  imports: [
-    CheckboxModule, StyleClassModule,
-    ButtonModule, InputTextModule, FormsModule,
-    CommonModule,
-  ],
-  templateUrl: './registration-page.component.html',
-  styleUrl: './registration-page.component.scss',
+    selector: 'app-registration-page',
+    imports: [
+        CheckboxModule, StyleClassModule,
+        ButtonModule, InputTextModule, FormsModule,
+        CommonModule,
+    ],
+    templateUrl: './registration-page.component.html',
+    styleUrl: './registration-page.component.scss'
 })
 
 export class RegistrationPageComponent {
