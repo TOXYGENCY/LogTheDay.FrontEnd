@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+/* Глобальные стили для всего сайта */
+/* @import "primeng/resources/primeng.css";
+@import "primeng/resources/themes/aura-dark-blue/theme.css";*/
+/* @import "../node_modules/primeflex/primeflex.scss";  */
+@import "../node_modules/primeicons/primeicons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Inter var;
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("/assets/fonts/InterVariable.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: Inter var;
+        font-style: italic;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("/assets/fonts/InterVariable-Italic.woff2") format("woff2");
+    }
+}
+
+
+@layer tailwind-base, primeui, tailwind-utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}

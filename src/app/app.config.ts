@@ -4,6 +4,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
 import { MyPreset } from '../assets/mytheme'; // Import your custom preset
+import Aura from '@primeng/themes/aura';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
